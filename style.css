@@ -17,7 +17,7 @@ html{
 
 .container{
     max-width: 1300px;
-    padding: 0px 100px;
+    padding: 0px 2rem;
     margin: auto;
     z-index: 10;
 }
@@ -236,9 +236,10 @@ html{
     width: 55%;
     padding: 0 20px;
     overflow: hidden;
+    display:flex;
 }
 .about .about-content .left img{
-    height: 550px;
+    height: auto;
     width: 550px;
     object-fit: cover;
     border-radius: 50%;
@@ -779,14 +780,78 @@ section{
 }
 
 
-@media screen and (max-width:680px){
-    .menu{
+/*Common breakpoints are 320px — 480px for mobile devices, 481px — 768px for iPads & tablets,
+ 769px — 1024px for small screens like laptop, 1025px — 1200px for large screens like Desktops,
+  and 1201px and above for extra large screens like TV.*/
+
+@media screen and (min-width:320px) and (max-width:500px){
+  .menu{
         display: none;
         justify-content: space-around;
-    }
+    }    
     .menu-list{
         display: flex;
         cursor: pointer;
     }
+    .navbar{
+        position: fixed;
+        width: 52.25%;
+        margin: auto;
+        padding: 35px 25px 35px 25px;
+        display: flex;
+        align-items: center;
+        z-index: 999;
+    }
+    .showcase-text{
+        max-width: 800px;
+        padding-top: 250px;
+        padding-left: 25px;
+        color: black;
+    }
+    
     
 }
+ /*    .showcase{
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        margin: auto;
+        
+    }
+  
+   
+    .menu-list{
+        display: flex;
+        cursor: pointer;
+    }
+    .container{
+        max-width: 600px;
+        padding: 0px 10px;
+        margin: auto;
+        z-index: 10;
+    }
+    .about .about-content .left img{
+        height: auto;
+        width: 550px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+    .about .about-content{
+        flex-direction: column;
+    }
+    .about-content{
+        flex-direction: column;
+    }
+    .skill-content{
+        flex-direction: column;
+    }
+    #about{
+        width: auto;
+        height: auto;
+        flex-direction: column;
+    }
+} */
+
+
+
+
