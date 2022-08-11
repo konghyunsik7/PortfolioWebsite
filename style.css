@@ -1156,6 +1156,10 @@ section{
     padding-left: 50px;
 } 
 
+
+.about .about-content .right .text span{
+    display: none;
+}
 /* Hamburger regionend */
 
 
