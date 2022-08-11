@@ -7,6 +7,7 @@
     font-family: 'Poppins', sans-serif;
     text-decoration: none;
     outline: none;
+    
 }
 
 /* Smooth scroll */
@@ -784,8 +785,155 @@ section{
 /*Common breakpoints are 320px — 480px for mobile devices, 481px — 768px for iPads & tablets,
  769px — 1024px for small screens like laptop, 1025px — 1200px for large screens like Desktops,
   and 1201px and above for extra large screens like TV.*/
+  @media screen and (min-width:1000px) and (max-width:1200px){
+    *{
+        overflow-x: auto;
+    }
+    .navbar{
+        position: fixed;
+        width: 100%;
+        margin: auto;
+        padding: 35px 45px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 999;
+    }
+    .navbar ul li{
+        margin: 0 13px;
+    }
+    #services{
+        width: 100%;
+        height: 140vh;
+    }
+    .services .service-content .main{
+        width: calc(30% - 20px);
+        min-height: 900px;
+        border-radius: 10px;
+        text-align: center;
+        border-radius: 5px;
+        position: relative;
+        cursor: pointer;
+    }
+    .service-logo{
+        width: 130px;
+        height: 130px;
+        border-radius: 50%;
+        margin: 0px auto 0;
+        background: white;
+        border: 18px solid lightgray; 
+        transform: transform 1s;
+    }
+    .service h4::after{
+        content: '';
+        width: 40px;
+        height: 30px;
+        background: linear-gradient(to right, white, lightgray);
+        position: absolute;
+        right: -5px;
+        top: -5px;
+        z-index: -1;
+    }
+    .service h4::before{
+        content: '';
+        width: 40px;
+        height: 30px;
+        background: linear-gradient(to right, white, lightgray);
+        position: absolute;
+        right: -5px;
+        top: -5px;
+        z-index: -1;
+    }
 
-@media screen and (min-width:320px) and (max-width:480px){
+
+
+  }
+  @media screen and (min-width:777px) and (max-width:1000px){
+    *{
+        overflow-x: auto;
+    }
+    .navbar{
+        position: fixed;
+        width: 100%;
+        margin: auto;
+        padding: 35px 45px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 999;
+    }
+    .navbar ul li{
+        list-style: none;
+        display: inline-block;
+        margin: 0 5px;
+        font-size: 13px;
+        text-transform: uppercase;
+    }
+    .services .service-content .main{
+        width: 100%;
+        height: 90vh;
+        text-align: center;
+        border-radius: 5px;
+        position: relative;
+        cursor: pointer;
+        flex-direction: column;
+    }
+    .service{
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        position: absolute;
+        bottom: 0;
+        z-index: 1;
+        transform: scale(1.0);
+        box-shadow: 0 0 20px -15px white;
+        transition: transform 0.8s;
+        text-align: center;
+    }
+    .service-logo{
+        width: 130px;
+        height: 130px;
+        border-radius: 50%;
+        margin: 0px auto 0;
+        background: white;
+        border: 18px solid lightgray; 
+        transform: transform 1s;
+    }
+    .service-logo i{
+        color: lightgray; 
+        width: 50px;
+        margin-top: 20px;
+    }
+    .service h4::after{
+        content: '';
+        width: 40px;
+        height: 30px;
+        background: linear-gradient(to right, white, lightgray);
+        position: absolute;
+        right: -5px;
+        top: -5px;
+        z-index: -1;
+    }
+    .service h4::before{
+        content: '';
+        width: 40px;
+        height: 30px;
+        background: linear-gradient(to right, white, lightgray);
+        position: absolute;
+        right: -5px;
+        top: -5px;
+        z-index: -1;
+    }
+    .service h4{
+        height: 28px;
+        width: 80%;
+        background: white; 
+        margin: 60px auto;
+        position: relative;
+    }
+  } 
+
+@media screen and (min-width:320px) and (max-width:776px){
     
 /* Showcase section- iphone size*/
     *{
@@ -803,7 +951,7 @@ section{
         position: absolute;
         bottom: 0;
         right: 0;
-        width: 375px;
+        width: 500px;
         height: 100%;
         object-fit: cover;
         opacity: 0.1;
@@ -844,7 +992,7 @@ section{
 
     }
     .about .about-content .right .text{
-        font-size: 35px;
+        font-size: 45px;
         font-weight: 700;
         margin-bottom: 10px;
     }
@@ -869,7 +1017,7 @@ section{
 
     .services .service-content .main{
         width: 100%;
-        height: 100vh;
+        height: 90vh;
         text-align: center;
         border-radius: 5px;
         position: relative;
@@ -959,7 +1107,7 @@ section{
     transition: 0.3s ease-in-out;
 }
 
-@media(max-width: 768px){
+ @media(max-width: 776px){
     .menu-list{
         display: block;
     }
@@ -1006,7 +1154,7 @@ section{
 
 .list li span{
     padding-left: 50px;
-}
+} 
 
 /* Hamburger regionend */
 
@@ -1014,8 +1162,7 @@ section{
 
 
 
-
-  
+}
 
 
     /* .about .about-content .left{
