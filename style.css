@@ -844,7 +844,13 @@ section{
         top: -5px;
         z-index: -1;
     }
-
+    .service h4{
+        height: 40px;
+        width: 80%;
+        background: white; 
+        margin: 60px auto;
+        position: relative;
+    }
 
 
   }
@@ -925,7 +931,7 @@ section{
         z-index: -1;
     }
     .service h4{
-        height: 28px;
+        height: 40px;
         width: 80%;
         background: white; 
         margin: 60px auto;
@@ -1071,7 +1077,7 @@ section{
         z-index: -1;
     }
     .service h4{
-        height: 28px;
+        height: 40px;
         width: 80%;
         background: white; 
         margin: 60px auto;
@@ -1160,13 +1166,11 @@ section{
 .about .about-content .right .text span{
     display: none;
 }
+
+
 /* Hamburger regionend */
-
-
-
-
-
 }
+
 
 
     /* .about .about-content .left{
@@ -1252,8 +1256,3 @@ section{
         flex-direction: column;
     }
 } */
-
-
-
-
-}
